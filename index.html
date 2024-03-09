@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="./js/pet.js" defer type="module"></script>
+
+    <title>Pet Shop</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/assets/logo.svg" id="logo" />
+    </header>
+
+    <main>
+      <form id="form-register">
+        <div class="form-item">
+          <label for="name">Nome Completo</label>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Nome Completo"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="contact">Número de Contato</label>
+          <input
+            type="tel"
+            name="contact"
+            id="contact"
+            placeholder="Numero de Contato"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email(opcional)"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="pet-name">Nome do Pet</label>
+          <input
+            type="text"
+            name="pet-name"
+            id="pet-name"
+            placeholder="Nome do Pet"
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="breed">Raca</label>
+          <input type="text" name="breed" id="breed" placeholder="Raca" />
+        </div>
+
+        <div class="form-item">
+          <label for="service">Tipo de Serviço</label>
+
+          <select name="service" id="service">
+            <option value="castracao">Castração</option>
+            <option value="banho">Banho</option>
+            <option value="tosa">Tosa</option>
+            <option value="vacina">Vacina</option>
+            <option value="banho e tosa">Banho e Tosa</option>
+            <option value="banho e vacina">Banho e Vacina</option>
+            <option value="tosa e vacina">Tosa e Vacina</option>
+            <option value="banho, tosa e vacina">Banho, Tosa e Vacina</option>
+          </select>
+        </div>
+
+        <button id="button-submit">Cadastrar</button>
+      </form>
+
+      <ul id="list-pets"></ul>
+    </main>
+  </body>
+</html>
