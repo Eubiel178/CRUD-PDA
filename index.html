@@ -24,6 +24,7 @@
             name="name"
             id="username"
             placeholder="Nome Completo"
+            required
           />
         </div>
 
@@ -34,6 +35,7 @@
             name="contact"
             id="contact"
             placeholder="Numero de Contato"
+            required
           />
         </div>
 
@@ -54,18 +56,26 @@
             name="pet-name"
             id="pet-name"
             placeholder="Nome do Pet"
+            required
           />
         </div>
 
         <div class="form-item">
           <label for="breed">Raca</label>
-          <input type="text" name="breed" id="breed" placeholder="Raca" />
+          <input
+            type="text"
+            name="breed"
+            id="breed"
+            placeholder="Raca"
+            required
+          />
         </div>
 
         <div class="form-item">
           <label for="service">Tipo de Serviço</label>
 
-          <select name="service" id="service">
+          <select name="service" id="service" required>
+            <option value="" selected disabled>Selecione</option>
             <option value="castracao">Castração</option>
             <option value="banho">Banho</option>
             <option value="tosa">Tosa</option>
